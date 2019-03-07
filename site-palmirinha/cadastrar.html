@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title<Receitas Sra. x</title>
+</head>
+<body>
+  <div id="cabecalho">
+<div id="banner">
+    <!--inserir a figura do banner -->
+  </div>
+    <div id="menu">
+      <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="cadastrar.html">cadastrar receita</a></li>
+      <li><a href="#">categorias de receita</a></li>
+      <li><a href="#">contato</a></li>
+    </ul>
+    </div>
+    <div id="pesquisa"></div>
+    <p id="redes=sociais">
+      <img src="img/facebook.png" />
+      <img src="img/instagram.png" />
+      <img src="img/twitter.png" />
+    </p>
+    <p>
+      <input type="search" name="pesquisa">
+      <input type="image" name="lupinha" alt="pesquisar" src="img/lupinha.png"/>
+      </div>
+    </p>
+
+<div id="corpo">
+    <h1>nova receita</h1>
+    <form action="salvar.jsp" method="post">
+    <label fir="nome">nome da receita:
+      <input type="text" name="nome "id="nome" placeholder="Digite o nome da receita" size="50">
+    </label>
+  <label for="foto">
+      <input type="file" name="foto" id="foto" />
+    </label>
+    <p>
+        <label for="descricao"> descrição da receita:<textarea placeholder="fala da sua receita" cols="50" rows"10"></textarea>
+        </label>
+        <p>
+        </p>
+          <fieldset>
+              <legend>novo ingrediente:</legend>
+              <p>
+                  <label for="qtde">
+                    <input type="number" name="qtde" min="1" max="1000" />
+                  </label>
+                </p>
+                <p>
+                  <label for="unidade">unidade de medida
+                    <select>
+                        <option value="cs">colher de sopa</option>
+                        <option value="cc">colher de chá</option>
+                        <option value="x">xícara</option>
+                  </select>
+                </label>
+              </p>
+              <p>
+                  <label for="descingrediente">descrição:
+                    <input type="next" name="descingrediente" id="descingrediente"
+                    size="30" placeholder="digi o nome do ingrediente">
+                  </label>
+                </p>
+                <button id="btnAdcionar">Adcionar Ingrediente</button>
+              </fieldset>
+            </p>
+            <p>
+              <h5>ingedientes adcionados</h5>
+              <table>
+                  <thead>
+                    <tr>
+                      <th>
+                          quantidade
+                        </th>
+                        <th>
+                          descrição
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="ingredientes"
+                      <tr id="ingrediente"
+                        <td id="qtde-ingrediente">
+                        </td>
+                      <td id="desc-ingrediente"
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </p>
+            <p>
+                <label for="modo de preparo">descrição da receitas:
+                  <textarea id="modo de preparo" name="modo-preparo" placeholder="digite o 
+                  modo de preparo" cols="50 rows="10></textarea>
+                </label>
+            </p>
+            <p>
+              Dificuldade:
+              <input id="facil" type="radio" name="Dificuldade" value="f" />
+              <label for="facil">Facil</label>
+              <input id="medio" type="radio" nome="Dificuldade" value="m" />
+              <label for="medio">Medio</label>
+              <input id="dificil" type="radio" name="Dificuldade" value="d" />
+              <label  for="dificil">dificil</label>
+            </p>
+          <p>
+            Tempo de preparo: <input type="number" name="tempo-preparo" />
+            <select name="unidade-tempo">
+              <option value="min">minutos</option>
+              <option value="h">horas</option>
+              <option value="d">dias</option>
+            </select>
+          </p>
+          <p>
+            Rendimento: <input type="numer" name="rendimento" min="1" max="100" />
+            porções 
+          </p>
+          <p>
+            Acompanhamentos: <br />
+            <table>
+              <tr>
+                <td>
+                  <label>
+                    <input type="checkbox" name="acompanhamentos" value="arroz" />
+                    Arroz
+                  </label>
+                </td>
+                <td>
+                      <label>
+                        <input type="checkbox" name="acompanhamentos" value="feijao" />
+                        Feijão
+                      </label>
+                </td>
+                <td>
+                      <label>
+                        <input type="checkbox" name="acompanhamentos" value="batata" />
+                        Batata Frita
+                      </label>
+                </td>
+                <td>
+                    <label>
+                      <input type="checkbox" name="acompanhamentos" value="Salada" />
+                      Salada
+                    </label>
+              </td>
+              <td>
+                  <label>
+                    <input type="checkbox" name="acompanhamentos" value="Batata-doce" />
+                    Batata Doce
+                  </label>
+            </td>
+            <td>
+                <label>
+                  <input type="checkbox" name="acompanhamentos" value="pure" />
+                  Pure de Batata
+                </label>
+            </td>
+              </tr>
+            </table>
+          </p>
+          <p>
+            <input type="submit" value="Salvar Receita"
+          </p>
+  </form>
+  <div id="rodape">
+  <p>desenvolvido por Raphael Santantonio &copy; 2019</p>
+  <p id="redes=sociais">
+    <img src="img/facebook.png" />
+    <img src="img/instagram.png" />
+    <img src="img/twitter.png" />
+  </p>
+  </div>
+</body>
+</html
